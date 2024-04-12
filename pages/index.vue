@@ -19,9 +19,15 @@ const handleChange = selectedOption => {
     title2="CCG Waiting Times"
     title3="Patient Pathway"
   >
-    <template #tab1>1</template>
-    <template #tab2>2</template>
-    <template #tab3>3</template>
+    <template #tab1>
+      <SummaryTab />
+    </template>
+    <template #tab2>
+      <PatientPathwayTab />
+    </template>
+    <template #tab3>
+      <WaitingTimesTab />
+    </template>
   </UiHystTabs>
 
   <!--
@@ -34,6 +40,7 @@ const handleChange = selectedOption => {
 .page-heading {
   text-align: center;
   margin: 1rem 0;
+  font-family: "Inter-bold";
   @media (min-width: 1024px) {
     display: none;
   }

@@ -86,11 +86,10 @@ const activeTab = ref("tab1");
   width: 100%;
   height: 40px;
   font-size: 1rem;
-  font-weight: bold;
   background-color: $medium-grey;
   color: white;
   border-radius: 0.313rem; // 5px
-  margin-bottom: 0.313rem; // 5px
+  margin-bottom: 0.5rem;
   cursor: pointer;
   @media (min-width: 768px) {
     max-width: 210px;

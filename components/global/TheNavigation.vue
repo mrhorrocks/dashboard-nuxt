@@ -135,7 +135,6 @@ div.navlinks {
     width: 200px;
     height: 40px;
     text-decoration: none;
-    font-family: Roboto;
     font-weight: bold;
     font-size: 1rem;
     color: black;
