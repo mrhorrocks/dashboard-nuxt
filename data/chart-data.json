@@ -1,0 +1,33 @@
+{
+    "labels": [
+        "Apr 15 - Mar 16",
+        "Apr 16 - Mar 17",
+        "Apr 17 - Mar 18",
+        "Apr 18 - Mar 19",
+        "Apr 19 - Mar 20"
+    ],
+    "datasets": [
+        {
+            "label": "Female",
+            "backgroundColor": "#4CAF50",
+            "data": [
+                930,
+                930,
+                930,
+                930,
+                930
+            ]
+        },
+        {
+            "label": "male",
+            "backgroundColor": "#f87979",
+            "data": [
+                440,
+                440,
+                440,
+                440,
+                440
+            ]
+        }
+    ]
+}

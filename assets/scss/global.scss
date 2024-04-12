@@ -1,0 +1,58 @@
+@import "partials/reset";
+@import "../../assets/fonts/googlefonts";
+@import "partials/grid";
+@import "partials/flex";
+@import "partials/typography";
+@import "partials/colours";
+@import "partials/vars";
+html {
+  scroll-behavior: smooth;
+  font-size: 1em;
+  height: 100%;
+}
+::selection {
+  color: #ffffff;
+  background: #ff6a67;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background-color: darken($body-bg, 10%);
+  main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1;
+    min-width: 0px; */
+    background-color: antiquewhite;
+  }
+}
+.container {
+  position: relative;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+.container-full {
+  position: relative;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0;
+}
+section#app-content {
+  /* padding: 1rem 0; */
+}
