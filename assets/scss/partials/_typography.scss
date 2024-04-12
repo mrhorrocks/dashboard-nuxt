@@ -32,3 +32,17 @@ p {
   line-height: 1.75;
   margin: 0 0 1rem 0;
 }
+.page-title-heading {
+  text-align: center;
+  margin: 1rem 0;
+  font-family: "Inter-bold";
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+.section-title {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+}

@@ -1,18 +1,5 @@
-<script setup>
-const fruitOptions = ref([
-  { label: "Apple", value: "apple" },
-  { label: "Banana", value: "banana" },
-  { label: "Orange", value: "orange" },
-]);
-const selectedFruit = ref("");
-
-const handleChange = selectedOption => {
-  selectedFruit.value = selectedOption;
-};
-</script>
-
 <template>
-  <h3 class="page-heading">Hysterectomies</h3>
+  <h3 class="page-title-heading">Hysterectomies</h3>
 
   <UiHystTabs
     title1="Summary"
@@ -23,10 +10,10 @@ const handleChange = selectedOption => {
       <SummaryTab />
     </template>
     <template #tab2>
-      <PatientPathwayTab />
+      <WaitingTimesTab />
     </template>
     <template #tab3>
-      <WaitingTimesTab />
+      <PatientPathwayTab />
     </template>
   </UiHystTabs>
 
@@ -35,14 +22,3 @@ const handleChange = selectedOption => {
   <UiOrgSelect />
   -->
 </template>
-
-<style lang="scss">
-.page-heading {
-  text-align: center;
-  margin: 1rem 0;
-  font-family: "Inter-bold";
-  @media (min-width: 1024px) {
-    display: none;
-  }
-}
-</style>
