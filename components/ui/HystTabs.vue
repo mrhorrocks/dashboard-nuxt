@@ -92,7 +92,7 @@ const activeTab = ref("tab1");
   margin-bottom: 0.5rem;
   cursor: pointer;
   @media (min-width: 768px) {
-    max-width: 210px;
+    min-width: 210px;
   }
   @media (min-width: 1024px) {
     margin-right: 0.5rem;
@@ -102,9 +102,6 @@ const activeTab = ref("tab1");
   background-color: $primary-green;
 }
 .tab-content {
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  padding: 0rem;
 }
 </style>
