@@ -24,19 +24,17 @@
       <UiHystButton text="Patient Pathway" />
     </div>
     <div class="lg:col-span-1">
-      <!--  HYST OPTIONS -->
       <UiHystOptions class="lg:col-span-1" />
-      <!--  HYST OPTIONS -->
     </div>
     <div class="lg:col-span-3">
       <SummaryContent />
     </div>
-    <div class="lg:col-span-3">
+    <!-- <div class="lg:col-span-3">
       <WaitingTimesContent />
     </div>
     <div class="lg:col-span-3">
       <PatientPathwayContent />
-    </div>
+    </div> -->
   </div>
 
   <!--
