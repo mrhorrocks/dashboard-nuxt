@@ -29,10 +29,10 @@
     <div class="lg:col-span-3">
       <SummaryContent />
     </div>
-    <!-- <div class="lg:col-span-3">
+    <div class="lg:col-span-3">
       <WaitingTimesContent />
     </div>
-    <div class="lg:col-span-3">
+    <!-- <div class="lg:col-span-3">
       <PatientPathwayContent />
     </div> -->
   </div>
