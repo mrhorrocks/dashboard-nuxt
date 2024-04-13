@@ -19,27 +19,32 @@
 
 <script>
 export default {
-  data () {
-    return {
-      isVisible: false,
+  setup () {
+    const isVisible = ref(false);
+
+    const handleScroll = () => {
+      isVisible.value = window.scrollY > 60; // Change # to your desired scroll position
     };
-  },
-  mounted () {
-    window.addEventListener("scroll", this.handleScroll);
-  },
-  destroyed () {
-    window.removeEventListener("scroll", this.handleScroll);
-  },
-  methods: {
-    handleScroll () {
-      this.isVisible = window.scrollY > 60; // Change # to your desired scroll position
-    },
-    scrollToTop () {
+
+    const scrollToTop = () => {
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
-    },
+    };
+
+    onMounted(() => {
+      window.addEventListener("scroll", handleScroll);
+    });
+
+    onUnmounted(() => {
+      window.removeEventListener("scroll", handleScroll);
+    });
+
+    return {
+      isVisible,
+      scrollToTop,
+    };
   },
 };
 </script>
