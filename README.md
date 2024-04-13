@@ -1,4 +1,6 @@
-# Nuxt 3 Minimal Starter
+# dashboard-nuxt
+
+![The dashboard wireframe in Figma](https://github.com/mrhorrocks/mrhorrocks.github.io/blob/main/img/dashboard-nuxt-screenshot.png?raw=true "The dashboard wireframe in Figma")
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 

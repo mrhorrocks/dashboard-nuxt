@@ -135,8 +135,8 @@ div.navlinks {
     width: 200px;
     height: 40px;
     text-decoration: none;
-    font-weight: bold;
     font-size: 1rem;
+    font-family: "Inter-Regular";
     color: black;
     text-align: center;
     text-rendering: optimizelegibility;

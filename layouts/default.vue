@@ -1,5 +1,6 @@
 <template>
   <AppHeader />
+  <ScrollToTopButton />
   <section id="app-content">
     <div class="container">
       <main>

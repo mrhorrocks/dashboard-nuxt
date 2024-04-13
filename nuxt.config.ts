@@ -19,4 +19,9 @@ export default defineNuxtConfig({
       meta: [{ name: 'BBraun Gynaecology', content: 'Data driven dashboard' }],
     }
   },
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth'
+    }
+  }
 })
