@@ -1,6 +1,6 @@
 <template>
   <section role="contentinfo" aria-label="Summary">
-    <h3 class="section-title">Summary</h3>
+    <h3 class="section-title" id="summary">Summary</h3>
 
     <div class="grid xl:cols-2">
       <div class="grid lg:cols-2">

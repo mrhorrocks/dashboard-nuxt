@@ -5,16 +5,22 @@ defineProps({
     required: false,
     default: "text-prop-is-required",
   },
+  href: {
+    type: String,
+    required: false,
+    default: "/",
+  },
 });
 </script>
 
 <template>
-  <button class="hyst-nav">{{ text }}</button>
+  <!-- <button class="hyst-nav">{{ text }}</button> -->
+  <NuxtLink :href="href" class="hyst-nav">{{ text }}</NuxtLink>
 </template>
 
 <style lang="scss">
 @import "@/assets/scss/partials/colours";
-button.hyst-nav {
+a.hyst-nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +28,7 @@ button.hyst-nav {
   height: 40px;
   font-size: 1rem;
   font-family: "Inter-Regular";
+  text-decoration: none;
   background-color: $medium-grey;
   color: white;
   border-radius: 0.313rem; // 5px

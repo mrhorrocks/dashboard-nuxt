@@ -19,9 +19,9 @@
 
   <div class="grid lg:cols-3 hysterectomies-nav">
     <div class="hysterectomies-nav-buttons lg:col-span-2">
-      <UiHystButton text="Summary" />
-      <UiHystButton text="CCG Waiting Times" />
-      <UiHystButton text="Patient Pathway" />
+      <UiHystButtonNav text="Summary" href="#summary" />
+      <UiHystButtonNav text="CCG Waiting Times" href="#waiting-times" />
+      <UiHystButtonNav text="Patient Pathway" href="#patient-pathway" />
     </div>
     <div class="lg:col-span-1">
       <UiHystOptions class="lg:col-span-1" />
