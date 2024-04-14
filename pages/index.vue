@@ -1,5 +1,5 @@
 <template>
-  <h3 class="page-title-heading">Hysterectomies</h3>
+  <h2 class="page-title-heading">Hysterectomies</h2>
 
   <!-- <UiHystTabs
     title1="Summary"

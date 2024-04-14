@@ -1,7 +1,3 @@
-<template>
-  <Line :data="data" :options="options" />
-</template>
-
 <script lang="ts">
 import {
   Chart as ChartJS,
@@ -41,3 +37,16 @@ export default {
   },
 };
 </script>
+
+<template>
+  <div class="chart-container">
+    <Line :data="data" :options="options" />
+  </div>
+</template>
+
+<style lang="scss">
+.chart-container {
+  min-width: 0;
+  min-width: 160px;
+}
+</style>
