@@ -49,8 +49,9 @@ p {
   display: flex;
   flex-direction: column;
   line-height: 1.25rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   span {
     font-size: 0.85rem;
+    font-weight: normal;
   }
 }
