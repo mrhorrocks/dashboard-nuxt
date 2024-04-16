@@ -138,7 +138,7 @@ export const options = {
         legend: {
             display: true,
             position: 'top',
-            align: 'center',
+            align: 'end',
             labels: {
                 color: ['#000000'],
                 useBorderRadius: true,
@@ -212,7 +212,7 @@ export const options = {
             max: 200,
             min: 0,
             title: {
-                display: true,
+                display: false,
                 text: 'Patients (%)',
                 color: '#000000', // BLACK
                 font: {
