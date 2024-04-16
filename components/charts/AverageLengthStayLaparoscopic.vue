@@ -11,7 +11,7 @@ import {
   SubTitle,
 } from "chart.js";
 import { Bar } from "vue-chartjs";
-import * as chartConfig from "./chart-data/AverageLengthStay";
+import * as chartConfig from "./chart-data/AverageLengthStayLaparoscopic";
 
 ChartJS.register(
   CategoryScale,
@@ -40,10 +40,10 @@ export default {
 
 <template>
   <h3 class="chart-title">
-    Rates of LAP V OPEN
-    <span>7 Year Hysterectomies</span>
+    Average length of Stay Benchmarked
+    <span>April 2018 to March 2019</span>
   </h3>
-  <div style="height: 337px">
+  <div style="height: 270px">
     <Bar :data="data" :options="options" />
   </div>
 </template>
