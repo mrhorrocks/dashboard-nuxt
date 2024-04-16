@@ -3,10 +3,10 @@
     <h2 class="section-title" id="summary">Summary</h2>
 
     <div class="grid lg:cols-12 gap-2">
-      <div class="lg:col-span-7 chart-container">
+      <div class="lg:col-span-6 chart-container">
         <ChartsRatesLapOpen />
       </div>
-      <div class="lg:col-span-5">
+      <div class="lg:col-span-6">
         <h3 class="chart-title">
           Hysterectomies
           <span>April 2018 to March 2019</span>
@@ -30,6 +30,9 @@
         <div>
           <ChartsInfectionsLap />
         </div>
+      </div>
+      <div class="lg:col-span-6 chart-container">
+        <ChartsAverageLengthStay />
       </div>
     </div>
 
