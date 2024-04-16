@@ -1,7 +1,3 @@
-<template>
-  <Line :data="data" :options="options" />
-</template>
-
 <script lang="ts">
 import {
   Chart as ChartJS,
@@ -14,8 +10,8 @@ import {
   Legend,
   SubTitle,
 } from "chart.js";
-import { Line } from "vue-chartjs";
-import * as chartConfig from "./chart-data/AdmissionsCoded";
+import { Bar } from "vue-chartjs";
+import * as chartConfig from "./chart-data/AverageLengthStay";
 
 ChartJS.register(
   CategoryScale,
@@ -29,9 +25,9 @@ ChartJS.register(
 );
 
 export default {
-  name: "AgeDistribution",
+  name: "Admissions",
   components: {
-    Line,
+    Bar,
   },
   setup () {
     return {
@@ -41,3 +37,19 @@ export default {
   },
 };
 </script>
+
+<template>
+  <h3 class="chart-title">
+    Rates of LAP V OPEN
+    <span>7 Year Hysterectomies</span>
+  </h3>
+  <div style="height: 337px">
+    <Bar :data="data" :options="options" />
+  </div>
+</template>
+
+<style lang="scss">
+.chart-container {
+  min-width: 0;
+}
+</style>
