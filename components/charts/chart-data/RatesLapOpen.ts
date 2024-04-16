@@ -64,7 +64,7 @@ export const data = {
             ]
         },
         {
-            label: 'Laporoscopic',
+            label: 'Laparoscopic',
             backgroundColor: '#00b482', // DARK GREEN
             borderColor: '#70257d', // PURP
             yAxisID: 'y',
@@ -114,7 +114,7 @@ export const options = {
     responsive: true,
     maintainAspectRatio: false,
     interaction: {
-        // mode: 'index',
+        mode: 'index',
         intersect: false,
     },
     stacked: true,
@@ -138,14 +138,15 @@ export const options = {
         legend: {
             display: true,
             position: 'top',
-            align: 'end',
+            align: 'center',
             labels: {
                 color: ['#000000'],
                 useBorderRadius: true,
                 borderRadius: 2,
                 boxWidth: 10,
                 boxHeight: 10,
-                // padding: 10,
+                padding: 20,
+                usePointStyle: false,
                 font: {
                     size: 11,
                     // weight: 'bold'
@@ -212,7 +213,7 @@ export const options = {
             max: 200,
             min: 0,
             title: {
-                display: false,
+                display: true,
                 text: 'Patients (%)',
                 color: '#000000', // BLACK
                 font: {
