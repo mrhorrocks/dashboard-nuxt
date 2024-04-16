@@ -1,39 +1,79 @@
 export const data = {
     labels: [
-        'Dec 20',
-        'Jan 21',
-        'Feb 21',
-        'Mar 21',
-        'Apr 21',
-        'May 21',
-        'Jun 21',
+        '2012/12',
+        '2013/14',
+        '2014/15',
+        '2015/16',
+        '2016/17',
+        '2017/18',
+        '2019/19',
     ],
     datasets: [
         {
-            label: 'Emergency Admissions',
-            backgroundColor: '#a47eaa', // LIGHT PURP
-            borderColor: '#a47eaa', // LIGHT PURP
+            type: 'line',
+            label: 'Top 25 Trusts % Lap Rate',
+            backgroundColor: '#ffffff', // white
+            borderColor: '#ffc107', // YELLOW
             yAxisID: 'y',
-            borderDash: [5, 5],
             tension: 0.4,
-            pointRadius: 0,
+            pointRadius: 3,
             data: [
-                143,
-                159,
-                133,
-                126,
-                86,
-                84,
-                86,
+                35,
+                36,
+                47,
+                49,
+                55,
+                57,
+                61,
             ]
         },
         {
-            label: 'Emergency SOS Admissions',
-            backgroundColor: '#70257d', // PURP
+            type: 'line',
+            label: 'National % Lap Rate',
+            backgroundColor: '#ffffff', // white
+            borderColor: '#000000', // BLACK
+            yAxisID: 'y',
+            tension: 0.4,
+            pointRadius: 3,
+            data: [
+                20,
+                25,
+                28,
+                33,
+                36,
+                41,
+                42,
+            ]
+        },
+        {
+            type: 'line',
+            label: 'Trust % Lap Rate',
+            backgroundColor: '#ffffff', // white
+            borderColor: '#ff5a07', // ORANGE
+            yAxisID: 'y',
+            tension: 0.4,
+            pointRadius: 3,
+            data: [
+                15,
+                9,
+                10,
+                24,
+                46,
+                42,
+                39,
+            ]
+        },
+        {
+            label: 'Laporoscopic',
+            backgroundColor: '#00b482', // DARK GREEN
             borderColor: '#70257d', // PURP
             yAxisID: 'y',
             tension: 0.4,
             pointRadius: 0,
+            borderRadius: {
+                topLeft: 5,
+                topRight: 5,
+            },
             pointStyle: 'circle',
             data: [
                 25,
@@ -46,22 +86,27 @@ export const data = {
             ]
         },
         {
-            // type: 'bar',
-            label: 'Emergency Coded Sepsis',
-            backgroundColor: '#00b482', // GREEN
-            borderColor: '#00b482', // GREEN
-            yAxisID: 'y1',
+            label: 'OPEN',
+            backgroundColor: '#70257d', // DARK PURP
+            borderColor: '#a47eaa', // LIGHT PURP
+            yAxisID: 'y',
+            borderDash: [5, 5],
+            tension: 0.4,
             pointRadius: 0,
+            borderRadius: {
+                topLeft: 5,
+                topRight: 5,
+            },
             data: [
-                35,
-                43,
-                47,
-                49,
-                55,
-                57,
-                61,
+                143,
+                159,
+                133,
+                126,
+                86,
+                84,
+                86,
             ]
-        }
+        },
     ]
 }
 
@@ -95,14 +140,14 @@ export const options = {
             position: 'top',
             align: 'center',
             labels: {
-                color: ['#00a09a'],
+                color: ['#000000'],
                 useBorderRadius: true,
                 borderRadius: 2,
                 boxWidth: 10,
                 boxHeight: 10,
                 // padding: 10,
                 font: {
-                    size: 10,
+                    size: 11,
                     // weight: 'bold'
                 }
             },
@@ -116,7 +161,7 @@ export const options = {
     },
     scales: {
         x: {
-            stacked: false,
+            stacked: true,
             grid: {
                 drawOnChartArea: false, // only want the grid lines for one axis to show up
             },
@@ -128,48 +173,48 @@ export const options = {
                 minRotation: 0 // Roptate the label
             }
         },
+        // y: {
+        //     stacked: false,
+        //     max: 200,
+        //     min: 0,
+        //     title: {
+        //         display: true,
+        //         text: 'Emergency Admissions SOS / Emergency Admissions',
+        //         color: '#ff0000', // RED
+        //         font: {
+        //             size: 11,
+        //             weight: 'normal'
+        //         }
+        //     },
+        //     type: 'linear',
+        //     display: true,
+        //     position: 'left',
+        //     grid: {
+        //         drawOnChartArea: false, // only want the grid lines for one axis to show up
+        //     },
+        //     ticks: {
+        //         font: {
+        //             size: 11,
+        //             weight: 'normal'
+        //         },
+        //         color: '#ff0000',
+        //         beginAtZero: true,
+        //         callback: function (value: number, index: any, values: any) {
+        //             if (value >= 1000) {
+        //                 return value / 1000 + 'k';
+        //             }
+        //             return value;
+        //         }
+        //     }
+        // },
         y: {
             stacked: false,
             max: 200,
             min: 0,
             title: {
                 display: true,
-                text: 'Emergency Admissions SOS / Emergency Admissions',
-                color: '#ff0000', // RED
-                font: {
-                    size: 11,
-                    weight: 'normal'
-                }
-            },
-            type: 'linear',
-            display: true,
-            position: 'right',
-            grid: {
-                drawOnChartArea: false, // only want the grid lines for one axis to show up
-            },
-            ticks: {
-                font: {
-                    size: 11,
-                    weight: 'normal'
-                },
-                color: '#ff0000',
-                beginAtZero: true,
-                callback: function (value: number, index: any, values: any) {
-                    if (value >= 1000) {
-                        return value / 1000 + 'k';
-                    }
-                    return value;
-                }
-            }
-        },
-        y1: {
-            stacked: false,
-            max: 200,
-            min: 0,
-            title: {
-                display: true,
                 text: 'Patients (%)',
-                color: '#00a09a', // GREEN
+                color: '#000000', // BLACK
                 font: {
                     size: 13,
                     weight: 'bold'
@@ -187,7 +232,7 @@ export const options = {
                     size: 11,
                     weight: 'normal'
                 },
-                color: '#00a09a',
+                color: '#000000',
                 beginAtZero: true,
                 callback: function (value: number, index: any, values: any) {
                     if (value >= 1000) {
