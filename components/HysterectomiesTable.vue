@@ -13,7 +13,7 @@
     </thead>
     <tbody>
       <tr>
-        <td>Benign<span>Q3800</span></td>
+        <td>Benign<span>Laporoscopic</span></td>
         <td>000</td>
         <td>00</td>
         <td>£0,000</td>
@@ -37,7 +37,7 @@
         <td>£0,000</td>
       </tr>
       <tr>
-        <td>Non Benign<span>Q3800</span></td>
+        <td>Non Benign<span>Laporoscopic</span></td>
         <td>000</td>
         <td>00</td>
         <td>£0,000</td>
