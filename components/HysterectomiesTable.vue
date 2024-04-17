@@ -2,7 +2,7 @@
 //
 </script>
 <template>
-  <table cellpadding="0" cellspacing="2">
+  <table cellpadding="0" cellspacing="2" class="hysterectomies-table">
     <thead>
       <tr>
         <th>Type</th>
@@ -13,7 +13,7 @@
     </thead>
     <tbody>
       <tr>
-        <td>Benign<span>Laporoscopic</span></td>
+        <td>Benign<span>Laparoscopic</span></td>
         <td>000</td>
         <td>00</td>
         <td>£0,000</td>
@@ -37,7 +37,7 @@
         <td>£0,000</td>
       </tr>
       <tr>
-        <td>Non Benign<span>Laporoscopic</span></td>
+        <td>Non Benign<span>Laparoscopic</span></td>
         <td>000</td>
         <td>00</td>
         <td>£0,000</td>
@@ -62,7 +62,7 @@
 
 <style lang="scss">
 @import "@/assets/scss/partials/colours";
-table {
+table.hysterectomies-table {
   width: 100%;
   font-size: 0.875rem; // 14px
   border: 0px solid white;

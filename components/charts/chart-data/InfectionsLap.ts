@@ -13,7 +13,7 @@ export const data = {
           '#a4a4a4'// Grey
         ],
         borderWidth: 0,
-        cutout: '80%'
+        cutout: '70%'
       }
     ]
   }
@@ -46,14 +46,14 @@ export const data = {
           align: 'center',
           display: true,
           labels: {
-              color: ['#00a09a'],
+              color: ['#000000'],
               useBorderRadius: true,
               borderRadius: 5,
               boxWidth: 14,
               boxHeight: 14,
               // padding: 10,
               font: {
-                  size: 10,
+                  size: 11,
                   // weight: 'bold'
               }
           },

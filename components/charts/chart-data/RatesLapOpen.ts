@@ -16,7 +16,9 @@ export const data = {
             borderColor: '#ffc107', // YELLOW
             yAxisID: 'y',
             tension: 0.4,
-            pointRadius: 3,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            borderWidth: 4,
             data: [
                 35,
                 36,
@@ -34,7 +36,9 @@ export const data = {
             borderColor: '#000000', // BLACK
             yAxisID: 'y',
             tension: 0.4,
-            pointRadius: 3,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            borderWidth: 4,
             data: [
                 20,
                 25,
@@ -52,7 +56,9 @@ export const data = {
             borderColor: '#ff5a07', // ORANGE
             yAxisID: 'y',
             tension: 0.4,
-            pointRadius: 3,
+            pointRadius: 5,
+            pointHoverRadius: 7,
+            borderWidth: 4,
             data: [
                 15,
                 9,
@@ -64,12 +70,13 @@ export const data = {
             ]
         },
         {
-            label: 'Laporoscopic',
+            label: 'Laparoscopic',
             backgroundColor: '#00b482', // DARK GREEN
-            borderColor: '#70257d', // PURP
+            borderColor: '#00b482', // DARK GREEN
+            borderWidth: 0,
             yAxisID: 'y',
-            tension: 0.4,
-            pointRadius: 0,
+            // tension: 0.4,
+            // pointRadius: 0,
             borderRadius: {
                 topLeft: 5,
                 topRight: 5,
@@ -88,11 +95,11 @@ export const data = {
         {
             label: 'OPEN',
             backgroundColor: '#70257d', // DARK PURP
-            borderColor: '#a47eaa', // LIGHT PURP
+            borderColor: '#70257d', // DARK PURP
             yAxisID: 'y',
-            borderDash: [5, 5],
-            tension: 0.4,
-            pointRadius: 0,
+            // borderDash: [5, 5],
+            // tension: 0.4,
+            // pointRadius: 0,
             borderRadius: {
                 topLeft: 5,
                 topRight: 5,
@@ -114,7 +121,7 @@ export const options = {
     responsive: true,
     maintainAspectRatio: false,
     interaction: {
-        // mode: 'index',
+        mode: 'index',
         intersect: false,
     },
     stacked: true,
@@ -135,17 +142,36 @@ export const options = {
         //         weight: 'bold'
         //     }
         // },
+        tooltip: {
+            backgroundColor: '#ffffffd7',
+            borderColor: '#808080',
+            borderWidth: 2,
+            cornerRadius: 3,
+            titleColor: '#000',
+            titleFont: {weight: 'bold', size: 14},
+            bodyFont: {weight: 'normal', size: 11},
+            bodyColor: '#000',
+            bodySpacing: 5,
+            padding: 10,
+            caretPadding: 20,
+            caretSize: 10,
+            multiKeyBackground: '#0000ff',
+            footerColor: '#000000',
+            font: {size: 20}
+            // usePointStyle: true,
+        },
         legend: {
             display: true,
             position: 'top',
-            align: 'end',
+            align: 'center',
             labels: {
                 color: ['#000000'],
                 useBorderRadius: true,
                 borderRadius: 2,
-                boxWidth: 10,
-                boxHeight: 10,
-                // padding: 10,
+                boxWidth: 14,
+                boxHeight: 14,
+                padding: 20,
+                usePointStyle: false,
                 font: {
                     size: 11,
                     // weight: 'bold'
