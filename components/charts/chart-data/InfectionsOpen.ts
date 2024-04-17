@@ -13,7 +13,7 @@ export const data = {
         '#a4a4a4'// Grey
       ],
       borderWidth: 0,
-      cutout: '85%'
+      cutout: '70%'
     }
   ]
 }
@@ -77,7 +77,7 @@ export const options = {
             boxHeight: 14,
             // padding: 10,
             font: {
-                size: 11,
+                size: 13.6,
                 // weight: 'bold'
             }
         },

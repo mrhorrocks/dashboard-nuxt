@@ -197,8 +197,8 @@ export const options = {
                 color: ['#000000'],
                 useBorderRadius: true,
                 borderRadius: 2,
-                boxWidth: 10,
-                boxHeight: 10,
+                boxWidth: 14,
+                boxHeight: 14,
                 // padding: 10,
                 font: {
                     size: 11,

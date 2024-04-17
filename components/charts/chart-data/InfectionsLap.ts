@@ -13,7 +13,7 @@ export const data = {
           '#a4a4a4'// Grey
         ],
         borderWidth: 0,
-        cutout: '80%'
+        cutout: '70%'
       }
     ]
   }
